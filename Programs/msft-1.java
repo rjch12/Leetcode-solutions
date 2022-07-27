@@ -1,0 +1,29 @@
+// // you can also use imports, for example:
+// // import java.util.*;
+
+// // you can write to stdout for debugging purposes, e.g.
+// // System.out.println("this is a debug message");
+// import java.util.*;
+
+// class Solution {
+//   public static void main(String otfs[]){
+//     Solution s = new Solution();
+//     find({"039","4","14","32","","34","7"});
+//   }
+//     public static int find(String[] E) {
+//         // write your code in Java SE 8
+//         int res = 0, index = 0;
+//         HashMap<Character, Integer> hm =new HashMap<>();
+//         for(String s: E){
+//           for(int i = 0; i < s.length(); i++){
+//             hm.put(s.charAt(i), index);
+//           }
+//           index++;
+//         }
+//         System.out.println(hm);
+
+//         return res;
+//     }
+// }
+
+class a{}
