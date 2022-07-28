@@ -4,18 +4,6 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-class TreeNode {
-  TreeNode left;
-  TreeNode right;
-  int val;
-
-  public TreeNode(int value) {
-    this.left = null;
-    this.right = null;
-    this.val = value;
-  }
-}
-
 class FindLeavesOfBinartTree_366 {
   public static void main(String[] args) {
     FindLeavesOfBinartTree_366 flobt = new FindLeavesOfBinartTree_366();
