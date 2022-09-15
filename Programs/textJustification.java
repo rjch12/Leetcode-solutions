@@ -6,8 +6,8 @@ import java.util.List;
 class textJustification {
     public static void main(String[] args) {
         textJustification tj = new textJustification();
-        System.out.println(
-                tj.fullJustify(new String[] { "This", "is", "an", "example", "of", "text", "justification." }, 16));
+        System.out.println(tj.fullJustify(new String[] { "This", "is", "an", "example", "of", "text", "justification." }, 16));
+        // System.out.println(tj.fullJustify(new String[] { "What","must","be","acknowledgment","shall","be" }, 16));
     }
 
     public List<String> fullJustify(String[] words, int maxWidth) {
