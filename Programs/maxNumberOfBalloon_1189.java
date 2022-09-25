@@ -8,6 +8,7 @@ class maxNumberOfBalloon_1189 {
     // System.out.println(mnb.maxNumberOfBalloons("loonbalxballpoon"));
     System.out.println(mnb.maxNumberOfBalloons("ballon"));
   }
+
   public int maxNumberOfBalloons(String text) {
     Map<Character, Integer> hm = new HashMap<>();
     for (int i = 0; i < text.length(); i++) {
