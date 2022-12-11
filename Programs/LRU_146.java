@@ -1,18 +1,18 @@
 import java.util.*;
 
-class node {
-  node prev, next;
-  int key, val;
-
-  public node(int k, int v) {
-    this.key = k;
-    this.val = v;
-    this.prev = null;
-    this.next = null;
-  }
-}
-
 class LRU_146 {
+  class node {
+    node prev, next;
+    int key, val;
+
+    public node(int k, int v) {
+      this.key = k;
+      this.val = v;
+      this.prev = null;
+      this.next = null;
+    }
+  }
+
   node head, tail;
   Map<Integer, node> hm = new HashMap<>();
   int size = 0, cap = 0;

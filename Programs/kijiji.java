@@ -1,149 +1,121 @@
-// import java.util.concurrent.Callable;
 
-// interface Reptile {
-//     ReptileEgg lay();
-// }
+/*
+ * The Game of Cards
 
-// class FireDragon implements Reptile{
-//     ReptileEgg r;
-    
-//     public FireDragon() {
-//     }
-//     public ReptileEgg lay() {
-//         return this.lay();
+Part I:
 
-//     }
+In a game of cards involving 2 players, each player is given 5 cards. There are 13 types of cards, valued from lowest to highest as shown below.
 
-//     public static void main(String[] args) throws Exception {
-//         FireDragon fireDragon = new FireDragon();
-//         System.out.println(fireDragon instanceof Reptile);
-//     }
-// }
+2 3 4 5 6 7 8 9 T J Q K A
 
-// class ReptileEgg {
-//     public ReptileEgg(Callable<Reptile> createReptile) {
-//         throw new UnsupportedOperationException("Waiting to be implemented.");
-//     }
+Your task is to write a program to determine which player wins. The rules of the game are as follows.
+The player with the highest value card wins; if the highest value card of player 1 is A and the highest value card of player 2 is J, then player 1 wins.
 
-//     public Reptile hatch() throws Exception {
-//         throw new UnsupportedOperationException("Waiting to be implemented.");
-//     }
-// }
+If the two players have the same highest value card, the one with the larger number of the highest value card wins; for example if player 1 has 1 card A and player 2 has 2 of card As, then player 2 wins.
 
-// import java.util.Collection;
-// import java.util.ArrayList;
-// import java.util.Arrays;
-// import java.util.Map;
-// import java.util.HashMap;
-// import java.util.List;
+In case both players had the same number of their highest value cards, their second highest value cards are compared in the same manner as steps 1 and 2.
 
-// class UniqueNumbers {
-//     public static Collection<Integer> findUniqueNumbers(Collection<Integer> numbers) {
-//         Map<Integer, Integer> freq = new HashMap<>();
-//         List<Integer> res = new ArrayList<>();
-//         for (int number : numbers) {
-//             freq.put(number, freq.getOrDefault(number, 0) + 1);
-//         }
-        
-//         for(int i: freq.keySet()) {
-//             if(freq.get(i) == 1)
-//             res.add(i);
-//         }
-//         return res;
-//     }
+If both players had an identical set of cards, then the game is a draw.
 
-//     public static void main(String[] args) {
-//         Collection<Integer> numbers = Arrays.asList(1, 2, 1, 3);
-//         for (int number : findUniqueNumbers(numbers))
-//             System.out.println(number);
-//     }
-// }
 
-// import java.util.stream.*;
-// import java.util.*;
+Input
+A list of size 5 representing the cards of player 1.
+A list of size 5 representing the cards of player 2.
+Output
+A single integer representing the winner.
+1 if player 1 has won.
+2 if player 2 has won.
+0 if there was a draw.
 
-// class TestResults
-// {
-//     public static class Student {
-//         private String name;
-//         private int score;
-        
-//         public Student(String name, int score) {
-//             this.name = name;
-//             this.score = score;
-//         }
-        
-//         public int getScore() {
-//             return score;
-//         }
-        
-//         public String getName() {
-//             return name;
-//         }
-//     }
-    
-//     public static List<String> studentsThatPass(Stream<Student> students, int passingScore) {
-//         Queue<Student> pq = new PriorityQueue<>((a,b) -> b.getScore() - a.getScore());
 
-//         List<String> res = new ArrayList<>();
-//         students.filter(student -> student.getScore() > passingScore).forEach(student -> pq.offer(student));
-//         for(Student s: pq) {
-//             res.add(s.getName());
-//         }
-//         return res;
-//     }
-    
-//     public static void main(String[] args) {
-        
-//         List<Student> students = new ArrayList<Student>();
+Hints on time complexity: The best possible time complexity for the solution is O(n).
+Hints on space complexity: The best possible space complexity for the solution is O(1).
 
-//         students.add(new Student("Mike", 80));
-//         students.add(new Student("James", 57));
-//         students.add(new Student("Alan", 21));
+Part II:
 
-//         studentsThatPass(students.stream(), 50).forEach(System.out::println);        
-//     }
-// }
+Our input now will be a string, having 10 cards, where the first 5 cards being player 1’s cards and the last being player 2’s cards. The cards are separated by a space. Each card is represented by two characters, the first determining the type of the card and the second its suit (H, D, C, S). For the purposes of this task the suits are irrelevant, so you can ignore them (consider the first character only). 
 
-class NNode {
-    private NNode leftChild, rightChild;
-    
-    public NNode(NNode leftChild, NNode rightChild) {
-        this.leftChild = leftChild;
-        this.rightChild = rightChild;
-    }
-    
-    public NNode getLeftChild() {
-        return this.leftChild;
-    }
-    
-    public NNode getRightChild() {
-        return this.rightChild;
-    }
+Examples:
 
-    public int height() {
-        return dfs(this, new int[]{0}, 0);
-        
-    }
 
-    public int dfs(NNode root, int []height, int localheight) {
-        if(root == null)
-            return 0;
-        
-            dfs(root.getLeftChild(), height, localheight + 1);
-            dfs(root.getRightChild(), height, localheight + 1); 
+Player 1
+Player 2
+Result
+JH KS QC 3D 2D
+3H 4S KS QH AD
+2
+5H 3S JC JD 2D
+JD 2H TH TH TS
+1
+AH KS AC TD 2D
+AH 2C 3H 4S AH
+1
+AH 2S 3C 4D 5D
+5C 3S 2H 4S, AH
+0
+ */
 
-            height[0] = Math.max(height[0], localheight);
+import java.util.*;
 
-        return height[0];
-    }
-
+class Cards {
     public static void main(String[] args) {
-        NNode leaf1 = new NNode(null, null);
-        NNode leaf2 = new NNode(null, null);
-        NNode NNode = new NNode(leaf1, null);
-        NNode root = new NNode(NNode, leaf2);
+        Cards c = new Cards();
+        List<String> p1 = new ArrayList<>();
+        List<String> p2 = new ArrayList<>();
 
-        System.out.println(root.height());
+// 5H 3S JC JD 2D
+// JD 2H TH TH TS
+// AH KS AC TD 2D
+// AH 2C 3H 4S AH
+// AH 2S 3C 4D 5D
+// 5C 3S 2H 4S, AH
+
+
+        p1.add("AH");
+        p1.add("2S");
+        p1.add("3C");
+        p1.add("4D");
+        p1.add("5D");
+
+        p2.add("5C");
+        p2.add("3S");
+        p2.add("2H");
+        p2.add("4S");
+        p2.add("AH");
+
+
+        
+        System.out.println("Winner is: " + c.FindWinner(p1, p2));
+
+    }
+
+    public int FindWinner(List<String> p1, List<String> p2) {
+        int winner = 0;
+        char[] rankCard = new char[] { '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A' };
+        Map<Character, Integer> freqMapP1 = new HashMap<>();
+        Map<Character, Integer> freqMapP2 = new HashMap<>();
+
+        for (String card : p1) {
+            char cardVal = card.charAt(0);
+            freqMapP1.put(cardVal, freqMapP1.getOrDefault(cardVal, 0) + 1);
+        }
+
+        for (String card : p2) {
+            char cardVal = card.charAt(0);
+            freqMapP2.put(cardVal, freqMapP2.getOrDefault(cardVal, 0) + 1);
+        }
+
+        for (int i = rankCard.length - 1; i >= 0; i--) {
+            int freqp1 = 0, freqp2 =0;
+
+            if(freqMapP1.containsKey(rankCard[i])) {freqp1 = freqMapP1.get(rankCard[i]);}
+            if(freqMapP2.containsKey(rankCard[i])) {freqp2 = freqMapP2.get(rankCard[i]);}
+
+            if (freqp1 > freqp2)
+                return 1;
+            else if (freqp2 > freqp1)
+                return 2;   
+        }
+        return winner;
     }
 }

@@ -29,5 +29,53 @@ function Polyfill(promises) {
   });
 }
 
-Polyfill([test("hello"), test2("bello")])
-  .then((data) => console.log(data));
+Polyfill([test("hello"), test2("bello")]).then((data) => console.log(data));
+
+console.log(a);
+
+function test1(message) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(message);
+    }, 1000);
+  });
+}
+
+function test2(message) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(message);
+    }, 1000);
+  });
+}
+
+function polyFill(promises) {
+  let result = [];
+  let len = promises.length;
+
+  return new Promise((resolve, reject) => {
+    promises.forEach((p, ind) => {
+      p.then((data) => result.push(data)).catch((err) => reject(err));
+      if (ind === promises.length) resolve(result);
+    });
+  });
+}
+
+polyFill(test1("hello"), test2("bello"))
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err));
+
+
+
+console.log("start");
+
+function p (message) {
+  return new Promise((resolve, reject) => {
+    console.log(1);
+    resolve(message);
+  });
+}
+
+p(2);
+
+console.log("end");
