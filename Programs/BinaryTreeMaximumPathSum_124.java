@@ -16,22 +16,26 @@
 
 class BinaryTreeMaximumPathSum_124 {
     int max;
+
     public int maxPathSum(TreeNode root) {
         max = Integer.MIN_VALUE;
-        findPath(root, root.val);    
+        findPath(root);
         return max;
     }
-    public int findPath(TreeNode root, int localMax) {
-        if(root == null)
-        return 0;
 
-        int lstSum = findPath(root.left, localMax);
-        int rstSum = findPath(root.right, localMax);
+    public int findPath(TreeNode root) {
+        if (root == null)
+            return 0;
 
-        if(lstSum < 0) lstSum = 0;
-        if(rstSum < 0) rstSum = 0;
+        int lstSum = findPath(root.left);
+        int rstSum = findPath(root.right);
+
+        if (lstSum < 0)
+            lstSum = 0;
+        if (rstSum < 0)
+            rstSum = 0;
 
         max = Math.max(max, root.val + lstSum + rstSum);
-        return root.val;
+        return Math.max(root.val + lstSum, root.val + rstSum);
     }
 }
