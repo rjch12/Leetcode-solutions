@@ -25,7 +25,8 @@
  */
 package com.leetcode.problems;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 class keyPath {
   Map<String, keyPath> children;

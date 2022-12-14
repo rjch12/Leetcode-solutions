@@ -2,9 +2,7 @@ package com.leetcode.wish;
 
 import java.util.PriorityQueue;
 
-package com.leetcode.problems;
-
-public class order {
+class order {
   int quantity;
   float price;
 
@@ -13,8 +11,6 @@ public class order {
     this.price = p;
   }
 }
-
-package com.leetcode.problems;
 
 public class WishTradeOrderSystem {
 
@@ -87,5 +83,4 @@ public class WishTradeOrderSystem {
     }
     return numProd - qty;
   }
-
 }

@@ -36,5 +36,4 @@ public class hitCounter {
     System.out.println(q.size());
     return q.size();
   }
-
 }

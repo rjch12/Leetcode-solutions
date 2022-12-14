@@ -1,7 +1,7 @@
+package com.leetcode.problems;
+
 import java.util.Map;
 import java.util.HashMap;
-
-package com.leetcode.problems;
 
 public class longestSubstringWithoutRepeatingChar_3 {
 

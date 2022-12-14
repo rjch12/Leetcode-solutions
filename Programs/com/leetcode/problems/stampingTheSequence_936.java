@@ -1,6 +1,7 @@
 package com.leetcode.problems;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class stampingTheSequence_936 {
   public static void main(String[] args) {

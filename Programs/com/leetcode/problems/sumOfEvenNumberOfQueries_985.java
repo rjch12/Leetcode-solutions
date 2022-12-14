@@ -1,6 +1,6 @@
-import java.util.Arrays;
-
 package com.leetcode.problems;
+
+import java.util.Arrays;
 
 public class sumOfEvenNumberOfQueries_985 {
     public static void main(String[] args) {
@@ -8,8 +8,8 @@ public class sumOfEvenNumberOfQueries_985 {
         int[] res = s.sumEvenAfterQueries(new int[] { 1, 2, 3, 4 },
                 new int[][] { { 1, 0 }, { -3, 1 }, { -4, 0 }, { 2, 3 } });
 
-        for(int i: res)
-        System.out.print(i + " ");
+        for (int i : res)
+            System.out.print(i + " ");
     }
 
     public int[] sumEvenAfterQueries(int[] nums, int[][] queries) {

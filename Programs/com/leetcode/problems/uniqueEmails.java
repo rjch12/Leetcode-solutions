@@ -1,6 +1,7 @@
 package com.leetcode.problems;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class uniqueEmails {
     public static void main(String orgs[]) {

@@ -23,7 +23,8 @@
 
 package com.leetcode.problems;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class NodeWithHighestEdgeScore_2374 {
     public static void main(String[] args) {

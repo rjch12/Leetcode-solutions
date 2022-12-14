@@ -1,6 +1,7 @@
 package com.leetcode.problems;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class implememtStackUsingQueue_225 {
   Queue<Integer> first;

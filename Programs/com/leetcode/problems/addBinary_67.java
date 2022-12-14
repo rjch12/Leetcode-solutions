@@ -1,7 +1,5 @@
 package com.leetcode.problems;
 
-package com.leetcode.problems;
-
 public class addBinary_67 {
   public static void main(String[] args) {
     addBinary_67 ab = new addBinary_67();

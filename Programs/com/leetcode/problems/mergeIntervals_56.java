@@ -1,13 +1,14 @@
+package com.leetcode.problems;
 
-
-import java.util.*;
-
- package com.leetcode.problems;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class mergeIntervals_56 {
   public static void main(String[] args) {
     mergeIntervals_56 mi = new mergeIntervals_56();
-    // int[][] res = (mi.merge(new int[][] { { 1, 3 }, { 2, 6 }, { 8, 10 }, { 15, 18 } }));
+    // int[][] res = (mi.merge(new int[][] { { 1, 3 }, { 2, 6 }, { 8, 10 }, { 15, 18
+    // } }));
     int[][] res = (mi.merge(new int[][] { { 1, 4 } }));
     for (int[] a : res)
       for (int i : a)
@@ -23,7 +24,7 @@ public class mergeIntervals_56 {
     if (intervals.length == 1) {
       return intervals;
     }
-    
+
     int start = intervals[0][0];
     int end = intervals[0][1];
     for (int i = 1; i < intervals.length; i++) {
@@ -38,5 +39,4 @@ public class mergeIntervals_56 {
     al.add(new int[] { start, end });
     return al.toArray(new int[al.size()][]);
   }
-
 }

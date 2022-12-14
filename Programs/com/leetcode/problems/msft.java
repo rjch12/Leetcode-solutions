@@ -1,11 +1,9 @@
 // you can also use imports, for example:
-// import java.util.*;
-
 // you can write to stdout for debugging purposes, e.g.
 // System.out.println("this is a debug message");
 package com.leetcode.problems;
 
-import java.util.*;
+import java.util.HashMap;
 
 public class msft {
   public static void main(String otfs[]) {

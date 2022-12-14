@@ -1,6 +1,7 @@
 package com.leetcode.problems;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class NumbersWithSameConsecutiveDifferences_967 {
   public static void main(String[] args) {

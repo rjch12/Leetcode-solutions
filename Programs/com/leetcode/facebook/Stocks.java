@@ -1,8 +1,6 @@
 // L.C. 121. Best Time to Buy and Sell Stock
 package com.leetcode.facebook;
 
-package com.leetcode.problems;
-
 public class Stocks {
   public static void main(String[] args) {
     Stocks s = new Stocks();

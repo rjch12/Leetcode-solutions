@@ -1,6 +1,6 @@
 package com.leetcode.problems;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class bagOftokens_948 {
     public static void main(String[] args) {

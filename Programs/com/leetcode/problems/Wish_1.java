@@ -3,9 +3,10 @@
  Given an array of String containing code snippet. 
  Remove single line and multi line comments from the array and return a new array
 */
-import java.util.*;
-
 package com.leetcode.problems;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Wish_1 {
 

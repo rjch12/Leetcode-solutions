@@ -56,7 +56,10 @@ AH 2S 3C 4D 5D
 
 package com.leetcode.problems;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class kijiji_Cards {
     public static void main(String[] args) {

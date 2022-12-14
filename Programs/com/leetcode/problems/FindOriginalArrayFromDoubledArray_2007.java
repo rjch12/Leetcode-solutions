@@ -1,5 +1,3 @@
-package com.leetcode.problems;
-
 /*
  * An integer array original is transformed into a doubled array changed by appending twice the value of every 
  * element in original, and then randomly shuffling the resulting array.
@@ -17,9 +15,11 @@ package com.leetcode.problems;
  * Other original arrays could be [4,3,1] or [3,1,4].
  */
 
-import java.util.*;
-
 package com.leetcode.problems;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class FindOriginalArrayFromDoubledArray_2007 {
   public static void main(String[] args) {

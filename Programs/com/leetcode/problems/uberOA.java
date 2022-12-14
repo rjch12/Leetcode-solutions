@@ -1,4 +1,3 @@
-
 /*
  * You are given two arrays of integers a and b, and two integers lower and upper.
  * Your task is to find the number of pairs (i, j) such that lower ≤ a[i] * a[i] + b[j] * b[j] ≤ upper.
@@ -13,9 +12,9 @@
  * For a = [1, 2, 3, -1, -2, -3], b = [10], lower = 0, and upper = 100, the output should be boundedSquareSum(a, b, lower, upper) = 0.
  * Since the array b contains only one element 10 and the array a does not contain 0, it is not possible to satisfy 0 ≤ a[i] * a[i] + 10 * 10 ≤ 100.
  */
-import java.util.*;
-
 package com.leetcode.problems;
+
+import java.util.Arrays;
 
 public class uberOA {
 

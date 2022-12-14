@@ -1,6 +1,6 @@
 package com.leetcode.problems;
 
-import java.util.*;
+import java.util.TreeMap;
 
 public class MyCalendar_2_731 {
     TreeMap<Integer, Integer> interval;

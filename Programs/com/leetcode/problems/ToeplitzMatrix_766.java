@@ -1,6 +1,7 @@
-import java.util.*;
-
 package com.leetcode.problems;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class ToeplitzMatrix_766 {
     public static void main(String[] args) {

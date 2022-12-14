@@ -1,29 +1,9 @@
 package com.leetcode.facebook;
 
-package com.leetcode.problems;
-
-public class TreeNode {
-  int val;
-  TreeNode left;
-  TreeNode right;
-
-  TreeNode() {}
-
-  TreeNode(int val) {
-    this.val = val;
-  }
-
-  TreeNode(int val, TreeNode left, TreeNode right) {
-    this.val = val;
-    this.left = left;
-    this.right = right;
-  }
-}
-
-package com.leetcode.problems;
+import com.leetcode.problems.TreeNode;
 
 public class invertBST {
-  
+
   public static void main(String[] args) {
     invertBST ibst = new invertBST();
 
@@ -34,19 +14,20 @@ public class invertBST {
     root.right = new TreeNode(7);
     root.right.left = new TreeNode(6);
     root.right.right = new TreeNode(9);
-    
+
     ibst.display(ibst.invertTree(root));
   }
 
   public void display(TreeNode root) {
-    if(root == null)
+    if (root == null)
       return;
 
     display(root.left);
-    System.out.print(root.val+ " ");
+    System.out.print(root.val + " ");
     display(root.right);
 
   }
+
   public TreeNode invertTree(TreeNode root) {
     if (root == null)
       return null;

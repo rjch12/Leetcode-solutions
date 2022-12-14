@@ -1,4 +1,3 @@
-
 // Question:
 // Design a hit counter which counts the number of hits received : the past 5 minutes.
 
@@ -56,16 +55,16 @@ public class HitCounter2 {
   }
 
   public void Hit(int seconds) {
-    if(seconds > 300)
-      for(int i = 1; i <= seconds % 300; i++)
+    if (seconds > 300)
+      for (int i = 1; i <= seconds % 300; i++)
         hits[i] = 0;
     hits[seconds % 300] = 1;
   }
 
   public int GetHits(int seconds) {
     int sum = 0;
-    for(int i = 1; i < 301; i++)
+    for (int i = 1; i < 301; i++)
       sum += hits[i];
     return sum;
   }
-  }
+}

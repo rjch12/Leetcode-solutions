@@ -1,6 +1,6 @@
 package com.leetcode.problems;
 
-import java.util.*;
+import java.util.Stack;
 
 public class decodeString_394 {
   public static void main(String[] args) {

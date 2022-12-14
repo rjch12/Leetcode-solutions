@@ -8,45 +8,27 @@
  * Explanation: Return true because "leetcode" can be segmented as "leet code".
  */
 
-import java.util.*;
-
 package com.leetcode.problems;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class wordBreak_139 {
   public static void main(String[] args) {
     wordBreak_139 wb = new wordBreak_139();
     // System.out.println(wb.wordBreak("leetcode", new
-    System.out.println(wb.wordBreak("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",new ArrayList<String>(Arrays.asList("a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa"))));
-    // System.out.println(wb.wordBreak("leetcode",new ArrayList<String>(Arrays.asList("leet", "code"))));
-    // System.out.println(wb.wordBreak("aaaaaaa", new ArrayList<String>(Arrays.asList("aaaa", "aaa"))));
+    System.out.println(wb.wordBreak(
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+        new ArrayList<String>(Arrays.asList("a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa",
+            "aaaaaaaaa", "aaaaaaaaaa"))));
+    // System.out.println(wb.wordBreak("leetcode",new
+    // ArrayList<String>(Arrays.asList("leet", "code"))));
+    // System.out.println(wb.wordBreak("aaaaaaa", new
+    // ArrayList<String>(Arrays.asList("aaaa", "aaa"))));
   }
-
-  // public boolean wordBreak(String s, List<String> wordDict) {
-  // int[] mem = new int[s.length()];
-  // Arrays.fill(mem, -1);
-  // return checkWords(s.toCharArray(), 0, wordDict, mem);
-  // }
-
-  // public boolean checkWords(char[] s, int offsetIndex, List<String> wordDict,
-  // int[] mem) {
-  // if (offsetIndex == s.length)
-  // return true;
-
-  // if (mem[offsetIndex] != -1)
-  // return mem[offsetIndex] == 0 ? false : true;
-
-  // String temp = "";
-  // for (int i = offsetIndex; i < s.length; i++) {
-  // temp += s[i];
-  // if (wordDict.contains(temp) && checkWords(s, i + 1, wordDict, mem)) {
-  // mem[i] = 1;
-  // return true;
-  // }
-  // }
-  // mem[offsetIndex] = 0;
-  // return false;
-  // }
-  // }
 
   public boolean wordBreak(String s, List<String> wordDict) {
     int[] arr = new int[s.length()];
