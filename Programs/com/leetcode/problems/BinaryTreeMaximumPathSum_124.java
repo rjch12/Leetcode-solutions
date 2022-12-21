@@ -14,7 +14,7 @@
  * Explanation: The optimal path is 2 -> 1 -> 3 with a path sum of 2 + 1 + 3 = 6.
  */
 
-package com.leetcode.problems;
+
 
 public class BinaryTreeMaximumPathSum_124 {
     int max;
