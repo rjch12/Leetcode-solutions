@@ -1,4 +1,4 @@
-package com.leetcode.facebook;
+package com.facebook.leetcode;
 
 public class addStrings {
 

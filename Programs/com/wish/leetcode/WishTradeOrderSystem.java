@@ -1,4 +1,4 @@
-package com.leetcode.wish;
+package com.wish.leetcode;
 
 import java.util.PriorityQueue;
 

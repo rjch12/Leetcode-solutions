@@ -1,10 +1,12 @@
+package com.leetcode.problems;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-class KeysandRooms_841 {
+public class KeysandRooms_841 {
     public static void main(String[] args) {
         KeysandRooms_841 k = new KeysandRooms_841();
         List<List<Integer>> rooms = new ArrayList<>();

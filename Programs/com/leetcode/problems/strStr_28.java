@@ -1,5 +1,3 @@
-
-
 package com.leetcode.problems;
 
 public class strStr_28 {

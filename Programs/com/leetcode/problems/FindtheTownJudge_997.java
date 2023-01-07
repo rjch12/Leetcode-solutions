@@ -13,7 +13,6 @@
  * 
  * Return the label of the town judge if the town judge exists and can be identified, or return -1 otherwise.
  */
-
 package com.leetcode.problems;
 
 public class FindtheTownJudge_997 {

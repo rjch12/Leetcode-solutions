@@ -6,11 +6,11 @@ import java.util.List;
 public class pathSum2_113 {
     /**
      * Definition for a binary tree node.
+     *      * 
+     * public      * 
      * package com.leetcode.problems;
-     * 
-     * public package com.leetcode.problems;
-     * 
-     * public class TreeNode {
+
+public class TreeNode {
      * int val;
      * TreeNode left;
      * TreeNode right;

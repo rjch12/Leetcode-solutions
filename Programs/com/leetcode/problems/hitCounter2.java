@@ -33,7 +33,6 @@
 // What if the number of hits per second could be very large? Does your design scale?
 
 // Website:https://repl.it/languages/csharp
-
 package com.leetcode.problems;
 
 public class HitCounter2 {

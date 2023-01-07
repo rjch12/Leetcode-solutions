@@ -1,6 +1,5 @@
 // Following program is a Java implementation
 // of Rabin Karp Algorithm given in the CLRS book
-
 package com.leetcode.problems;
 
 public class RabinKarp {

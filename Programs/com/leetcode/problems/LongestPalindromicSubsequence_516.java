@@ -1,5 +1,3 @@
-
-
 package com.leetcode.problems;
 
 public class LongestPalindromicSubsequence_516 {

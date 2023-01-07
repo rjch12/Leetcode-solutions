@@ -1,5 +1,5 @@
 // Write any import statements here
-package com.leetcode.facebook;
+package com.facebook.leetcode;
 
 import java.util.Arrays;
 

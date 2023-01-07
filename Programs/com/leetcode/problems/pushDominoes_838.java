@@ -23,7 +23,6 @@
  * Output: "RR.L"
  * Explanation: The first domino expends no additional force on the second domino.
  */
-
 package com.leetcode.problems;
 
 public class pushDominoes_838 {

@@ -13,8 +13,9 @@
  * Total amount you can rob = 1 + 3 = 4.
  */
 
+package com.leetcode.problems;
 
-class HouseRobber_198 {
+public class HouseRobber_198 {
     public static void main(String[] args) {
         HouseRobber_198 hr = new HouseRobber_198();
         int houses[] = { 1, 2, 3, 1 };

@@ -1,8 +1,7 @@
-package com.leetcode.BST;
+package com.leetcode.problems;
 
 import java.util.List;
 import java.util.ArrayList;
-import com.leetcode.problems.TreeNode;
 
 public class traversal {
     public static void main(String orgs[]) {

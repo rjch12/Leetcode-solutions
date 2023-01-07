@@ -11,7 +11,6 @@
  * Changing the fourth digit results in 9666.
  * The maximum number is 9969.
  */
-
 package com.leetcode.problems;
 
 public class Maximum69Number_1323 {

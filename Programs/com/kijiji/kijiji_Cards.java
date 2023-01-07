@@ -54,8 +54,8 @@ AH 2S 3C 4D 5D
 0
  */
 
-package com.leetcode.problems;
-
+package com.kijiji;
+ 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

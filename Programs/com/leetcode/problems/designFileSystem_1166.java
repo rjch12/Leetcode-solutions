@@ -23,6 +23,7 @@
  * fileSystem.createPath("/c/d", 1); // return false because the parent path "/c" doesn't exist.
  * fileSystem.get("/c"); // return -1 because this path doesn't exist.
  */
+
 package com.leetcode.problems;
 
 import java.util.HashMap;

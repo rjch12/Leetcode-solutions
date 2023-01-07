@@ -11,6 +11,8 @@
  * Explanation: group1 [1,4] and group2 [2,3].
  */
 
+package com.leetcode.problems;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

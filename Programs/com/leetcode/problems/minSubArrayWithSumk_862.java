@@ -35,5 +35,4 @@ public class minSubArrayWithSumk_862 {
     }
     return (min == Integer.MAX_VALUE) ? -1 : min;
   }
-
 }

@@ -1,4 +1,3 @@
-
 /* 
  Given an array of String containing code snippet. 
  Remove single line and multi line comments from the array and return a new array

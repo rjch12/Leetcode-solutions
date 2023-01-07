@@ -1,4 +1,3 @@
-
 /**
  * 739. Daily Temperatures
  * https://leetcode.com/problems/daily-temperatures/description/
@@ -12,8 +11,9 @@
  * Output: [1,1,4,2,1,1,0,0]
  * 
  */
+package com.leetcode.problems;
 
- class DailyTemperatures_739 {
+public class DailyTemperatures_739 {
     public static void main(String[] args) {
         DailyTemperatures_739 dt = new DailyTemperatures_739();
         int[] nums = { 73, 74, 75, 71, 69, 72, 76, 73 };

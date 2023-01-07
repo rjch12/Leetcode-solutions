@@ -27,6 +27,7 @@
  * Follow up:
  * What if the number of hits per second could be very large? Does your design scale?
 */
+
 package com.leetcode.problems;
 
 public class DesignHitcounter_362 {

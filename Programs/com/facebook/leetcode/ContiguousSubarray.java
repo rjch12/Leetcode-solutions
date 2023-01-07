@@ -1,4 +1,4 @@
-package com.leetcode.facebook;
+package com.facebook.leetcode;
 
 // Add any extra import statements you may need here
 

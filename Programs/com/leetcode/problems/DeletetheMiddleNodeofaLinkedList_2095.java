@@ -7,7 +7,6 @@
  * 
  * For n = 1, 2, 3, 4, and 5, the middle nodes are 0, 1, 1, 2, and 2, respectively.
  */
-
 package com.leetcode.problems;
 
 public class DeletetheMiddleNodeofaLinkedList_2095 {

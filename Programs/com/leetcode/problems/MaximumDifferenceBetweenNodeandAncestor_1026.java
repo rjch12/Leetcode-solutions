@@ -19,7 +19,6 @@
  * 
  * Among all possible differences, the maximum value of 7 is obtained by |8 - 1| = 7.
  */
-
 package com.leetcode.problems;
 
 public class MaximumDifferenceBetweenNodeandAncestor_1026 {
